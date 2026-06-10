@@ -288,6 +288,54 @@ footer {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+#incidencias {
+    background-color: #ffffff;
+    padding: 80px 10%;
+}
+
+.incidencias-form {
+    max-width: 800px;
+    margin: auto;
+}
+
+.incidencias-form input,
+.incidencias-form select,
+.incidencias-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.incidencias-form button {
+    background-color: #0a1f44;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.incidencias-form button:hover {
+    background-color: #163872;
+}
+
+.workflow {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.workflow-box {
+    background: #f5f5f5;
+    padding: 20px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 <body>
@@ -303,6 +351,7 @@ footer {
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Quiénes Somos</a></li>
                 <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#incidencias">Incidencias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -435,6 +484,79 @@ footer {
     </div>
 
 </section>
+        
+<section id="incidencias">
+
+    <h2>Sistema de Gestión de Incidencias</h2>
+
+    <p>
+        Los clientes pueden registrar incidencias relacionadas con redes,
+        hardware, software, servicios cloud o ciberseguridad.
+        Una vez registrada la solicitud, el equipo técnico procederá a su revisión.
+    </p>
+
+    <br>
+
+    <form class="incidencias-form">
+    
+
+        <input type="text" placeholder="Nombre de la empresa" required>
+
+        <input type="text" placeholder="Persona de contacto" required>
+
+        <input type="email" placeholder="Correo electrónico" required>
+
+        <select required>
+            <option value="">Seleccione tipo de incidencia</option>
+            <option>Red</option>
+            <option>Hardware</option>
+            <option>Software</option>
+            <option>Ciberseguridad</option>
+            <option>Servicios Cloud</option>
+        </select>
+
+        <textarea rows="6" placeholder="Describa la incidencia"></textarea>
+
+        <button type="button">
+        Registrar Incidencia
+        </button>
+        <p class="nota-ficticia">
+        *Demostración académica. Las incidencias registradas serían procesadas por el departamento de soporte técnico.
+        </p>
+
+    </form>
+
+    <h3 style="margin-top:50px;">
+        Workflow de Resolución de Incidencias
+    </h3>
+
+    <div class="workflow">
+
+        <div class="workflow-box">
+            <h4>1. Registro</h4>
+            <p>Recepción de la incidencia.</p>
+        </div>
+
+        <div class="workflow-box">
+            <h4>2. Asignación</h4>
+            <p>Asignación a un técnico.</p>
+        </div>
+
+        <div class="workflow-box">
+            <h4>3. Diagnóstico</h4>
+            <p>Análisis del problema.</p>
+        </div>
+
+        <div class="workflow-box">
+            <h4>4. Resolución</h4>
+            <p>Aplicación de la solución.</p>
+        </div>
+
+        <div class="workflow-box">
+            <h4>5. Cierre</h4>
+            <p>Confirmación con el cliente.</p>
+        </div>
+    
 <section id="contacto">
     <div class="container">
 
